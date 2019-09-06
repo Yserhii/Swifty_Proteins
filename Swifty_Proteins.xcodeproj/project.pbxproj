@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00C6B0223203DBB00AFE7A3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00C6B0123203DBB00AFE7A3 /* Colors.swift */; };
 		A01925B7231D23B30025E548 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01925B6231D23B30025E548 /* LoginViewController.swift */; };
 		A02DC79E2317BF60000CEECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02DC79D2317BF60000CEECA /* AppDelegate.swift */; };
 		A02DC7A32317BF60000CEECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02DC7A12317BF60000CEECA /* Main.storyboard */; };
 		A02DC7A62317BF60000CEECA /* Swifty_Proteins.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A02DC7A42317BF60000CEECA /* Swifty_Proteins.xcdatamodeld */; };
 		A02DC7A82317BF6E000CEECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A02DC7A72317BF6E000CEECA /* Assets.xcassets */; };
 		A02DC7AB2317BF6E000CEECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A02DC7A92317BF6E000CEECA /* LaunchScreen.storyboard */; };
+		A086DE84231FC1AE00B06298 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A086DE83231FC1AE00B06298 /* SceneKit.framework */; };
 		A0BE03EC231D625F004879F3 /* ListLigandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE03EB231D625F004879F3 /* ListLigandsViewController.swift */; };
 		A0BE03EE231D6273004879F3 /* ListLigandsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BE03ED231D6273004879F3 /* ListLigandsTableViewCell.swift */; };
 		A0BE03F3231D8229004879F3 /* ligands.txt in Resources */ = {isa = PBXBuildFile; fileRef = A0BE03F2231D8229004879F3 /* ligands.txt */; };
+		A0D9F27D2322630C001EA7D3 /* DrawLineBetweenTwoPointExtensionSCNNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9F27C2322630C001EA7D3 /* DrawLineBetweenTwoPointExtensionSCNNode.swift */; };
+		A0D9F27F2322640D001EA7D3 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9F27E2322640D001EA7D3 /* AlertController.swift */; };
+		A0D9F2812322D13C001EA7D3 /* ScrollTopextensionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9F2802322D13C001EA7D3 /* ScrollTopextensionTableView.swift */; };
+		A0F3315C231E4F4700356F6E /* LigandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F3315B231E4F4700356F6E /* LigandViewController.swift */; };
+		A0F33160231E76CB00356F6E /* RequestManeger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F3315F231E76CB00356F6E /* RequestManeger.swift */; };
 		BA0458CDA0BF7E9191B64A0D /* Pods_Swifty_Proteins.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50817442554679B402EFDEAE /* Pods_Swifty_Proteins.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50817442554679B402EFDEAE /* Pods_Swifty_Proteins.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty_Proteins.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7548BA241AC45E36F23C6B7B /* Pods-Swifty_Proteins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty_Proteins.debug.xcconfig"; path = "Target Support Files/Pods-Swifty_Proteins/Pods-Swifty_Proteins.debug.xcconfig"; sourceTree = "<group>"; };
+		A00C6B0123203DBB00AFE7A3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		A01925B6231D23B30025E548 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A02DC79A2317BF60000CEECA /* Swifty_Proteins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty_Proteins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02DC79D2317BF60000CEECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,9 +38,15 @@
 		A02DC7A72317BF6E000CEECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A02DC7AA2317BF6E000CEECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A02DC7AC2317BF6E000CEECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A086DE83231FC1AE00B06298 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		A0BE03EB231D625F004879F3 /* ListLigandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigandsViewController.swift; sourceTree = "<group>"; };
 		A0BE03ED231D6273004879F3 /* ListLigandsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListLigandsTableViewCell.swift; sourceTree = "<group>"; };
 		A0BE03F2231D8229004879F3 /* ligands.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ligands.txt; sourceTree = "<group>"; };
+		A0D9F27C2322630C001EA7D3 /* DrawLineBetweenTwoPointExtensionSCNNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLineBetweenTwoPointExtensionSCNNode.swift; sourceTree = "<group>"; };
+		A0D9F27E2322640D001EA7D3 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertController.swift; path = ../Utils/AlertController.swift; sourceTree = "<group>"; };
+		A0D9F2802322D13C001EA7D3 /* ScrollTopextensionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTopextensionTableView.swift; sourceTree = "<group>"; };
+		A0F3315B231E4F4700356F6E /* LigandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LigandViewController.swift; sourceTree = "<group>"; };
+		A0F3315F231E76CB00356F6E /* RequestManeger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManeger.swift; sourceTree = "<group>"; };
 		B3768F89757AD2E5D1B061C2 /* Pods-Swifty_Proteins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty_Proteins.release.xcconfig"; path = "Target Support Files/Pods-Swifty_Proteins/Pods-Swifty_Proteins.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A086DE84231FC1AE00B06298 /* SceneKit.framework in Frameworks */,
 				BA0458CDA0BF7E9191B64A0D /* Pods_Swifty_Proteins.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				A0BE03F2231D8229004879F3 /* ligands.txt */,
+				A00C6B0123203DBB00AFE7A3 /* Colors.swift */,
 			);
 			path = M;
 			sourceTree = "<group>";
@@ -103,6 +119,9 @@
 		A0E4EDA12317CA52000D62F2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A0D9F27C2322630C001EA7D3 /* DrawLineBetweenTwoPointExtensionSCNNode.swift */,
+				A0F3315F231E76CB00356F6E /* RequestManeger.swift */,
+				A0D9F2802322D13C001EA7D3 /* ScrollTopextensionTableView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -112,6 +131,7 @@
 			children = (
 				A01925B6231D23B30025E548 /* LoginViewController.swift */,
 				A0BE03EB231D625F004879F3 /* ListLigandsViewController.swift */,
+				A0F3315B231E4F4700356F6E /* LigandViewController.swift */,
 			);
 			path = C;
 			sourceTree = "<group>";
@@ -120,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A0BE03ED231D6273004879F3 /* ListLigandsTableViewCell.swift */,
+				A0D9F27E2322640D001EA7D3 /* AlertController.swift */,
 			);
 			path = V;
 			sourceTree = "<group>";
@@ -127,6 +148,7 @@
 		D309CA6A6873F4D3FCCBCDF8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A086DE83231FC1AE00B06298 /* SceneKit.framework */,
 				50817442554679B402EFDEAE /* Pods_Swifty_Proteins.framework */,
 			);
 			name = Frameworks;
@@ -253,9 +275,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D9F27D2322630C001EA7D3 /* DrawLineBetweenTwoPointExtensionSCNNode.swift in Sources */,
 				A01925B7231D23B30025E548 /* LoginViewController.swift in Sources */,
+				A00C6B0223203DBB00AFE7A3 /* Colors.swift in Sources */,
+				A0D9F2812322D13C001EA7D3 /* ScrollTopextensionTableView.swift in Sources */,
 				A0BE03EE231D6273004879F3 /* ListLigandsTableViewCell.swift in Sources */,
 				A02DC7A62317BF60000CEECA /* Swifty_Proteins.xcdatamodeld in Sources */,
+				A0F3315C231E4F4700356F6E /* LigandViewController.swift in Sources */,
+				A0D9F27F2322640D001EA7D3 /* AlertController.swift in Sources */,
+				A0F33160231E76CB00356F6E /* RequestManeger.swift in Sources */,
 				A02DC79E2317BF60000CEECA /* AppDelegate.swift in Sources */,
 				A0BE03EC231D625F004879F3 /* ListLigandsViewController.swift in Sources */,
 			);

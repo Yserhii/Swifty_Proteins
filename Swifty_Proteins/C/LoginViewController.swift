@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     
     let context = LAContext()
     var backFromAnotherView = false
+    private let alertController = AlertController()
     @IBOutlet weak var buttomTouchID: UIButton!
     
     @IBAction func unwindToLogin(segue: UIStoryboardSegue) {
@@ -83,20 +84,14 @@ extension LoginViewController {
                 } else {
                     print("TouchID or FaceID Authentication Failed")
                     DispatchQueue.main.async { [unowned self] in
-                        self.showAlertController("Authentication Failed")
+                        self.present(self.alertController.alertController("Authentication Failed"), animated: true, completion: nil)
                     }
                 }
             })
         } else {
             //If Touch ID is not available an Alert message is shown.
             print("TouchID or FaceID not available")
-            self.showAlertController("Authentication not available")
+            self.present(self.alertController.alertController("Authentication not available"), animated: true, completion: nil)
         }
-    }
-    
-    func showAlertController(_ message: String) {
-        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        present(alertController, animated: true, completion: nil)
     }
 }
