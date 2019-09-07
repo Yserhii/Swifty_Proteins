@@ -16,9 +16,7 @@ extension SCNNode {
         if length == 0 {
             return SCNVector3(0.0, 0.0, 0.0)
         }
-        
         return SCNVector3( iv.x / length, iv.y / length, iv.z / length)
-        
     }
     
     func buildLineInTwoPointsWithRotation(from startPoint: SCNVector3,
@@ -29,7 +27,6 @@ extension SCNNode {
                            y: endPoint.y-startPoint.y,
                            z: endPoint.z-startPoint.z)
         let l = CGFloat(sqrt(w.x * w.x + w.y * w.y + w.z * w.z))
-        
         if l == 0.0 {
             // two points together.
             let sphere = SCNSphere(radius: radius)
@@ -44,16 +41,13 @@ extension SCNNode {
         cyl.firstMaterial?.diffuse.contents = color
         
         self.geometry = cyl
-        
         //original vector of cylinder above 0,0,0
         let ov = SCNVector3(0, l/2.0,0)
         //target vector, in new coordination
         let nv = SCNVector3((endPoint.x - startPoint.x)/2.0, (endPoint.y - startPoint.y)/2.0,
                             (endPoint.z-startPoint.z)/2.0)
-        
         // axis between two vector
         let av = SCNVector3( (ov.x + nv.x)/2.0, (ov.y+nv.y)/2.0, (ov.z+nv.z)/2.0)
-        
         //normalized axis vector
         let av_normalized = normalizeVector(av)
         let q0 = Float(0.0) //cos(angel/2), angle is always 180 or M_PI

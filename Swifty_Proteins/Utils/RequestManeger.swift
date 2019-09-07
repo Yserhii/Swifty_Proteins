@@ -11,6 +11,7 @@ import UIKit
 class RequestManeger: UIViewController {
     
     func getInfoLigan(nameLigan: String, completion: @escaping(String, String?)->Void) {
+        cameraModel = false
         if let fileUrl = URL(string: "http://files.rcsb.org/ligands/view/\(nameLigan)_ideal.sdf") {
             do {
                 let contents = try String(contentsOf: fileUrl)
@@ -23,6 +24,7 @@ class RequestManeger: UIViewController {
                             {
                                 completion("", "Bad source. It is empty")
                             } else {
+                                cameraModel = true
                                 completion(contents1, nil)
                             }
                         }

@@ -9,6 +9,8 @@
 import UIKit
 import Foundation
 
+var cameraModel = false
+
 let Colors: [String : UIColor] = [
     "H" : #colorLiteral(red: 0.9998950362, green: 1, blue: 0.999871552, alpha: 1),
     "C" : #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1),

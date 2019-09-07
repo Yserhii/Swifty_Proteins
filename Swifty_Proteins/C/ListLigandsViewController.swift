@@ -130,20 +130,26 @@ extension ListLigandsViewController {
         self.treeInfiLigans.updateValue(arrayNodeCoordinate, forKey: "node")
         //Add in dictionary all links
         var arrayLink: [[String : String]] = []
+        var num = 1
         for index in numNode..<numNode + numLink {
-            let count = String(ligans[index + 3][0]).count
-            if count > 3 {
-                var firstNode: Int = 0
-                var secondNode: Int = 0
-                if (Int(String(ligans[index + 3][0].dropLast(2))) ?? 0) > numNode {
-                    firstNode = Int(String(ligans[index + 3][0].dropLast(3))) ?? 0
-                    secondNode = Int(String(ligans[index + 3][0].dropFirst(2))) ?? 0
+            var firstNode: Int = 0
+            var secondNode: Int = 0
+            if String(ligans[index + 3][0]).count > 3 {
+                let count = "\(num)".count
+                let str = String(ligans[index + 3][0])
+                let indexFirstnum = str.index(str.startIndex, offsetBy: count)
+                let fistNum = str[..<indexFirstnum]
+                if Int(fistNum) == num {
+                    firstNode = Int(String(ligans[index + 3][0].dropLast(str.count - count))) ?? 0
+                    secondNode = Int(String(ligans[index + 3][0].dropFirst(count))) ?? 0
                 } else {
-                    firstNode = Int(String(ligans[index + 3][0].dropLast(count / 2))) ?? 0
-                    secondNode = Int(String(ligans[index + 3][0].dropFirst(count / 2))) ?? 0
+                    num += 1
+                    firstNode = Int(String(ligans[index + 3][0].dropLast(str.count - "\(num)".count))) ?? 0
+                    secondNode = Int(String(ligans[index + 3][0].dropFirst("\(num)".count))) ?? 0
                 }
                 arrayLink.append(["first" : "\(firstNode)", "second" : "\(secondNode)", "link" : String(ligans[index + 3][1])])
             } else {
+                num = Int(String(ligans[index + 3][0])) ?? 0
                 arrayLink.append(["first" : String(ligans[index + 3][0]), "second" : String(ligans[index + 3][1]), "link" : String(ligans[index + 3][2])])
             }
         }

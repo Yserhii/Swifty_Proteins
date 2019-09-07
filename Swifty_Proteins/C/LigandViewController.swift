@@ -196,8 +196,10 @@ extension LigandViewController {
             let color = Colors[infoLigan["node"]?[index]["name"] ?? ""] ?? #colorLiteral(red: 0.8680813909, green: 0.4645460248, blue: 1, alpha: 1)
             let vectorNode = SCNVector3(x, y, z)
             //Add position for camera
-            if index == 0 {
+            if index == 0 && cameraModel == true {
                 self.positionCamera = SCNVector3(x, y, z + 35)
+            } else if index == 0 && cameraModel == false {
+                self.positionCamera = SCNVector3(0, 0, 35)
             }
             // Create sphere
             let sphereGeometry = SCNSphere(radius: 0.30)
