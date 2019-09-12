@@ -12,7 +12,7 @@ git clone https://github.com/Yserhii/Swifty_Proteins.git && cd Swifty_Proteins &
 </div>
 
 ## Resources I used
-- News: http://www.rcsb.org/ligand/001 (used for informations)
+- File: http://www.rcsb.org/ligand/001 (used for informations)
 - Import: https://cocoapods.org/ (Alamofire)
 
 ## Implemented:
